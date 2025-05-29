@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    background-color: #000;
+    color: #FFF;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}

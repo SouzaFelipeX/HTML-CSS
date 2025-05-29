@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+
+<body>
+    <h1>Imagens dinamicas</h1>  
+    <p>Tente abrur esse site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!-- se a tela for menor que 750px, carrega a imagem de 750px -->
+        
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" 
+        type="image/png"> <!-- se a tela for menor que 1050px, carrega a imagem de 1050px -->
+       
+        <img src="imagens/foto-g.png" rel="external" alt="imagem flexivel">    <!-- se a tela for maior que 1050px, carrega a imagem de 1500px -->
+    </picture>
+    <p>Abra<a target="_blank" href="index.2.0.html"> aqui</a></p>
+    <h1>Reproduzindo audios</h1>
+    <p>Vmaos aprender a reproduzir audios</p>
+    <audio src="midia/Cartoon, Jéja - On & On (feat. Daniel Levi) ｜ Electronic Pop ｜ NCS - Copyright Free Music.mp3" autoplay controls> </audio>  <!-- autoplay faz o audio ser reproduzido automaticamente -->
+    <audio preload="metadata" autoplay controls> <!-- preload="metadata" faz com que o audio seja carregado apenas o necessario para reproduzir -->
+        <source src="midia/Cartoon, Jéja - On & On (feat. Daniel Levi) ｜ Electronic Pop ｜ NCS - Copyright Free Music.mp3" type="audio/mp3">
+        <source src="midia/Cartoon, Jéja - On & On (feat. Daniel Levi) ｜ Electronic Pop ｜ NCS - Copyright Free Music.ogg" type="audio/ogg">
+        <source src="midia/Cartoon, Jéja - On & On (feat. Daniel Levi) ｜ Electronic Pop ｜ NCS - Copyright Free Music.wav" type="audio/wav">
+        <p>infelimente seu navegador não suporta este tipo de arquivo</p>
+        <a href="midia/Cartoon, Jéja - On & On (feat. Daniel Levi) ｜ Electronic Pop ｜ NCS - Copyright Free Music.mp3">clique aqui para baixar</a>
+    </audio>
+</body>
+</html>
